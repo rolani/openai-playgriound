@@ -13,7 +13,7 @@ import os
 def submit_question(text):
     """This submits a question to the OpenAI API"""
 
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+    openai.api_key = os.getenv("OPENAI")
     prompt = text
 
     result = openai.Completion.create(
@@ -38,7 +38,7 @@ def create_code(text, language):
         create_code(text, language)
 
     """
-    openai.api_key = os.getenv("OPENAI_API_KEY")
+    openai.api_key = os.getenv("OPENAI")
     prompt = f"## {language}\n\n{text}"
 
     result = openai.Completion.create(
