@@ -1,4 +1,4 @@
-name: Python application test with Github Actions using devcontainers
+name: Github Actions using devcontainers
 on: [push]
 jobs:
   build:
