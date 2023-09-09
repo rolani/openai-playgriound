@@ -12,5 +12,3 @@ def generate_image(prompt, size="1024x1024"):
     )
     image_url = response["data"][0]["url"]
     return image_url
-
-
