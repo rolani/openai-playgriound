@@ -6,8 +6,7 @@ test:
 	python -m pytest -vv test_*.py
 
 format:
-	black *.py oalib/*.py \
-		streamlit-apps/uberDemo.py
+	black *.py oalib/*.py 
 
 refactor: format lint
 
